@@ -19,7 +19,6 @@ for n in range(1,10):
     
     polyfit = PolynomialFeatures(degree=n)
     xn = polyfit.fit_transform(x)
-    print(xn)
     model = linear_model.LinearRegression()
     model.fit(xn, y)
     y1 = model.predict(xn)
