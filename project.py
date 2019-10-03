@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-data = pd.read_csv(r"C:\Users\inas\Desktop\Machine_learning_project\beancoder_examples-master\linear_reg_article\google.csv")
+data = pd.read_csv(r"google.csv")
 x = np.array(data["Date"])
 x = np.reshape(x, (len(x), 1))
 
